@@ -28,7 +28,7 @@ delay=2
 updateprice
 close=position side=[side] stoploss=[-]1.00% pr=last t=market reduce=1 return=1 onerror=closeside retries=3 id=SL-1 notify=telegram:"`SL at   \z` {stop_px}"
 close=position side=[side] price=[+]0.25% pr=last q=10% reduce=1 return=1 retries=3 id=TP-1 notify=telegram:"`TP-1 at   \z` {price}"
-close=position side=[side] price=[+]0.35% pr=last q=20% reduce=1 return=1 retries=3 id=TP-2notify=telegram:"`TP-2 at   \z` {price}"
+close=position side=[side] price=[+]0.35% pr=last q=20% reduce=1 return=1 retries=3 id=TP-2 notify=telegram:"`TP-2 at   \z` {price}"
 close=position side=[side] price=[+]0.50% pr=last q=30% reduce=1 return=1 retries=3 id=TP-3 notify=telegram:"`TP-3 at   \z` {price}"
 close=position side=[side] price=[+]0.75% pr=last q=30% reduce=1 return=1 retries=3 id=TP-4 notify=telegram:"`TP-4 at   \z` {price}"
 close=position side=[side] price=[+]1.00% pr=last q=10% reduce=1 return=1 retries=3 id=TP-5 notify=telegram:"`TP-5 at   \z` {price}"
